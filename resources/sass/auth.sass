@@ -1,0 +1,249 @@
+.aut
+    &-wrapper
+        max-width: 1320px
+        width: 100%
+        margin: 0 auto
+    &-add-modal
+        &-container
+            z-index: 100
+            width: 100%
+            height: 100%
+            display: flex
+            position: fixed
+            justify-content: center
+            align-items: center
+            background-color: rgba(0,0,0,0.4)
+            display: none
+        &-main
+            background-color: white
+            border: 1px solid #000000
+        &-content
+            margin: 50px
+            display: flex
+            flex-direction: column
+        &-form
+            display: flex
+            flex-direction: column
+            margin-top: 10px
+            align-items: flex-end
+        &-close
+            cursor: pointer
+        &-top-content
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-input
+            margin-top: 20px
+            border: 1px solid #000000
+            padding: 14px 20px
+            font-family: 'Inconsolata'
+            font-weight: 400
+            font-size: 20px
+            border-radius: 0
+            outline: none
+        &-select
+            width: 100%
+            outline: none
+            border-radius: 0
+            border: 1px solid #000000
+            padding: 14px 20px
+            font-family: 'Inconsolata'
+            font-weight: 400
+            font-size: 20px
+            margin-top: 20px
+        &-textarea
+            resize: none
+            height: 50px
+            width: 100%
+            font-family: 'Inconsolata'
+            font-weight: 400
+            font-size: 20px
+            border-radius: 0
+            border: 1px solid #000000
+            padding: 14px 20px
+            outline: none
+            margin-top: 20px
+    &-form
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 50px
+    &-input
+        max-width: 1000px
+        width: 100%
+        font-family: 'Inconsolata'
+        font-weight: 400
+        font-size: 20px
+        border-radius: 0
+        border: 1px solid #000000
+        padding: 14px 20px 
+        outline: none
+        margin-top: 20px
+        &:nth-child(1)
+            margin-top: 0
+        &:active
+            border-radius: 0
+            border: 1px solid #000000
+        &-span
+            margin-left: 365px
+        &-btn
+            border: 1px solid #000000
+            font-family: 'Inconsolata'
+            font-weight: 400
+            font-size: 15px
+            background-color: transparent
+            cursor: pointer
+            padding: 5px 20px
+            transition: 0.3s
+            &:hover
+                background-color: black
+                color: white
+    &-bottom-section
+        display: flex
+        max-width: 1000px
+        width: 100%
+        align-items: flex-end
+        justify-content: space-between
+        margin-top: 80px
+
+.input-file
+    border: 1px solid #000000
+    margin-top: 20px
+    position: relative
+    display: flex
+    justify-content: center
+    align-self: center
+    width: 100%
+
+.input-file span
+    position: relative
+    display: inline-block
+    cursor: pointer
+    outline: none
+    text-decoration: none
+    font-size: 14px
+    vertical-align: middle
+    color: black
+    text-align: center
+    border-radius: 0
+    background-color: #ffffff
+    line-height: 22px
+    padding: 14px 20px
+    box-sizing: border-box
+    border: none
+    margin: 0
+    transition: background-color 0.2s
+    font-family: "Inconsolata"
+    font-weight: 400
+    font-size: 20px
+
+.input-file input[type=file]
+    position: absolute
+    z-index: -1
+    opacity: 0
+    display: block
+    width: 0
+    height: 0
+
+/* Hover/active */
+.input-file:hover span 
+    background-color: #ffffff
+
+.input-file:active span
+    background-color: #ffffff
+
+/* Disabled */
+.input-file input[type=file]:disabled + span 
+    background-color: #eee
+
+.add-button
+    margin-top: 20px
+    border: 1px solid #000000
+    font-family: 'Inconsolata'
+    font-weight: 400
+    font-size: 15px
+    background-color: transparent
+    cursor: pointer
+    padding: 5px 20px
+    transition: 0.3s
+    &:hover
+        background-color: black
+        color: white
+    
+.sex
+    &-options
+        display: flex
+        margin-top: 20px
+        flex-direction: column
+        gap: 15px
+        padding-left: 20px
+        display: none
+        &-open
+            display: flex
+    &-option
+        display: flex
+        align-items: center
+    &-picker
+        margin-top: 20px
+
+.input-box
+    display: flex
+    align-content: space-between
+    border: 1px solid #000000
+    padding-top: 14px
+    padding-bottom: 14px
+    padding-left: 20px
+    padding: 14px 20px
+    width: 1000px
+    align-items: flex-end
+    justify-content: space-between
+    align-items: center
+    &-text
+        color: #838482
+    &-arrow
+        transform: rotate(0deg)
+        cursor: pointer
+
+@media screen and (min-width:375px) and (max-width:767px)
+    .aut
+        &-wrapper
+            max-width: 350px
+            width: 100%
+            margin: 0 auto
+        &-form
+            display: flex
+            flex-direction: column
+            // gap: 20px
+            align-items: center
+            padding-top: 25px
+        &-input
+            font-size: 14px
+            margin-top: 10px
+            &-span
+                margin-left: 0
+            &:nth-child(1)
+                margin-top: 0
+        &-bottom-section
+            margin-top: 40px
+            align-items: center
+
+    .input-box
+        width: 350px
+
+    .sex-picker
+        margin-top: 10px
+
+
+@media screen and (min-width:767px) and (max-width:1650px)
+    .aut
+        &-wrapper
+            max-width: 700px
+        &-input-span
+            margin-left: 0
+        &-bottom-section
+            margin-top: 40px
+            align-items: center
+
+    .input-box
+        width: 700px
+

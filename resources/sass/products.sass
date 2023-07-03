@@ -1,0 +1,204 @@
+.nav-list-item:nth-child(1)
+    opacity: 100%
+
+.search-form
+    align-self: center
+
+.text-field
+    background-color: transparent
+    border: 0
+    border-radius: 0
+    min-width: 940px
+    border-bottom: 1px solid #000000
+    min-height: 26px
+    font-family: 'Inconsolata'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    color: #666666
+    outline: none
+    &:focus
+        color: #000000
+
+.search-button
+    border: 1px solid #000000
+    font-family: 'Inconsolata'
+    font-weight: 400
+    font-size: 15px
+    background-color: transparent
+    cursor: pointer
+    padding: 5px 20px
+    transition: 0.3s
+    border-radius: 0
+    max-height: 26px
+    margin-left: 15px
+
+.search-button:hover
+    background-color: black
+    color: white
+
+.catalog-text
+    font-family: 'Inconsolata'
+    font-weight: 600
+    font-size: 20px
+    margin-top: 40px
+
+.filters
+    max-width: 300px
+    border: 1px solid #000000
+    padding: 20px
+    width: 100%
+    display: none
+    flex-direction: column
+    
+.products
+    display: flex
+    flex-wrap: wrap
+    gap: 60px 40px
+    justify-content: flex-start
+    max-width: 980px
+    margin: 0 auto 0 auto
+    &-container
+        display: flex
+        margin-top: 30px
+        align-items: flex-start
+        gap: 40px
+        flex-wrap: wrap
+    &-wrapper
+        max-width: 1320px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+
+.product
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 15px
+    border: 1px solid #000000
+    width: 300px
+    height: 300px
+    position: relative
+    &-price
+        align-self: flex-end
+        margin-top: 10px
+    &:hover .hover-span
+        display: block
+
+.hover-span
+    position: absolute
+    background: white
+    padding: 50px 0px
+    display: none
+
+.brand-name
+    margin-top: 15px
+    margin-bottom: 5px
+
+.product-image
+    align-self: center
+
+.option-name
+    margin-top: 20px
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #000000
+    align-items: center
+    padding: 5px
+    width: 200px
+
+.options.options--close
+    display: none
+
+.option
+    padding: 15px 10px
+    display: flex
+    align-items: center
+
+.close-button
+    cursor: pointer
+
+.filter-open-link
+    text-decoration-line: underline
+    margin-top: 20px
+    cursor: pointer
+
+.catalog-list
+    display: flex
+    gap: 15px
+    font-family: 'Inconsolata'
+    font-weight: 600
+    font-size: 20px
+    margin-top: 40px
+    &-item:not(&-item:last-child):after
+        content: '->'
+        margin-left: 15px
+
+.open-dropdown
+    transform: rotate(180deg)
+    cursor: pointer
+
+.open-dropdown.open-dropdown--open
+    transform: rotate(0deg)
+
+.product-image
+    max-height: 180px
+
+.apply_filters_btn
+    margin-top: 30px
+
+@media screen and (min-width:375px) and (max-width:767px)
+    .text-field
+        background-color: transparent
+        border: 0
+        border-radius: 0
+        min-width: 170px
+        border-bottom: 1px solid #000000
+        min-height: 26px
+        font-family: 'Inconsolata'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        color: #666666
+        outline: none
+        &:focus
+            color: #000000
+
+    .catalog-list
+        display: flex
+        gap: 15px
+        font-family: 'Inconsolata'
+        font-weight: 600
+        font-size: 14px
+        margin-top: 40px
+        &-item:not(&-item:last-child):after
+            content: '->'
+            margin-left: 15px
+    
+    .products
+        justify-content: center
+        &-wrapper
+            max-width: 350px
+            width: 100%
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+        &-container
+            justify-content: center
+
+@media screen and (min-width:767px) and (max-width:1650px)
+    .text-field
+        min-width: 550px
+
+    .products
+        justify-content: center
+        &-wrapper
+            max-width: 700px
+            width: 100%
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+        &-container
+            justify-content: center

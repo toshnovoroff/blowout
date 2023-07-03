@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+a {
+  color: black;
+}
+
+@font-face {
+  font-family: "Editorial New";
+  src: url(/fonts/title.ttf?067a0bf2a8d1256d30845ece370c6441);
+}
+nav {
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+
+.burger-nav {
+  display: none;
+}
+
+.nav-heading {
+  font-family: "Editorial New";
+  font-size: 96px;
+  font-weight: 100;
+}
+.nav-list {
+  display: flex;
+  margin: 20px auto 0 auto;
+  justify-content: center;
+}
+.nav-list-item {
+  font-family: "Inconsolata";
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 50%;
+  margin-right: 40px;
+}
+.nav-list-item:last-child {
+  margin-right: 0;
+}
+.nav-list-item:hover {
+  opacity: 80%;
+}
+
+h2 {
+  font-family: "Inconsolata";
+  font-weight: 800;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Inconsolata";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+p {
+  font-family: "Inconsolata";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+span {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 16px;
+}
+
+button {
+  border: 1px solid #000000;
+  font-family: "Inconsolata";
+  font-weight: 400;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  border-top: 1px solid #000000;
+  width: 940px;
+  margin: 100px auto 40px auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-text {
+  font-family: "Editorial New";
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.top-scroll-arrow {
+  position: fixed;
+  bottom: 40px;
+  right: 200px;
+}
+
+.box-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 0;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+input[type=checkbox]:checked {
+  background-color: black;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.admin-button {
+  margin-right: 40px;
+}
+.admin-button-container {
+  text-align: right;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  body {
+    position: relative;
+    padding-bottom: 20px;
+  }
+  nav {
+    display: none;
+  }
+  .burger-nav {
+    display: block;
+    margin: 20px auto 30px auto;
+    text-align: center;
+  }
+  .burger-nav-top {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .burger-nav-bottom {
+    display: none;
+  }
+  .burger-nav-bottom-open {
+    display: flex;
+  }
+  .nav-heading {
+    font-family: "Editorial New";
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+    justify-content: space-between;
+    height: 150px;
+  }
+  .nav-list-item {
+    font-family: "Inconsolata";
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 100%;
+    margin-right: 0;
+  }
+  .nav-list-item:hover {
+    opacity: 80%;
+  }
+  h2 {
+    font-family: "Inconsolata";
+    font-weight: 800;
+    font-size: 20px;
+  }
+  h3 {
+    font-family: "Inconsolata";
+    font-weight: 600;
+    font-size: 15px;
+  }
+  span {
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 13px;
+  }
+  p {
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-size: 14px;
+  }
+  button {
+    border: 1px solid #000000;
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-size: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  footer {
+    border-top: 1px solid #000000;
+    width: 300px;
+    margin: 30px auto 20px auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer-text {
+    font-family: "Editorial New";
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .top-scroll-arrow {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1650px) {
+  footer {
+    width: 700px;
+  }
+  .top-scroll-arrow {
+    display: none;
+  }
+}

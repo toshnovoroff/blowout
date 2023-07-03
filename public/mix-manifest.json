@@ -1,0 +1,22 @@
+{
+    "/js/account.js": "/js/account.js",
+    "/js/booking.js": "/js/booking.js",
+    "/js/index.js": "/js/index.js",
+    "/js/login.js": "/js/login.js",
+    "/js/products.js": "/js/products.js",
+    "/js/review.js": "/js/review.js",
+    "/js/script.js": "/js/script.js",
+    "/js/signup.js": "/js/signup.js",
+    "/js/addmodal.js": "/js/addmodal.js",
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/loyalty.css": "/css/loyalty.css",
+    "/css/booking.css": "/css/booking.css",
+    "/css/auth.css": "/css/auth.css",
+    "/css/account.css": "/css/account.css",
+    "/css/index.css": "/css/index.css",
+    "/css/style.css": "/css/style.css",
+    "/css/reviews.css": "/css/reviews.css",
+    "/css/products.css": "/css/products.css",
+    "/css/product.css": "/css/product.css"
+}

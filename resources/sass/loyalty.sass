@@ -1,0 +1,159 @@
+.nav-list-item:nth-child(2)
+        opacity: 100%
+
+.loyalty
+    &-wrapper
+        max-width: 1320px
+        width: 100%
+        display: flex
+        margin: 0 auto
+        flex-direction: column
+    &-info-text
+        margin-top: 20px
+        margin-bottom: 40px
+    &-plans-wrapper
+        display: flex
+        flex-direction: column
+        gap: 30px
+    &-plan
+        max-width: 1320px
+        width: 100%
+        display: flex
+        height: 200px
+        align-items: center
+        position: relative
+        // &:nth-child(5)
+        //     border: 1px solid #000000
+
+.loyalty-plan-bordered
+    border: 1px solid #000000
+
+.devider
+    max-width: 940px
+    width: 100%
+    border: 1px solid #000000
+    margin: 0 auto
+    opacity: 0.5
+
+.plan
+    &-name
+        position: absolute
+        font-family: 'Inconsolata'
+        font-weight: 800
+        font-size: 36px
+        transform: rotate(-90deg)
+        height: 47px
+        width: 198px
+        left: -75px
+        top: 76px
+        display: flex
+        justify-content: center
+        align-items: center
+        &_1
+            color: #FFFFFF
+            background-color: #D4EAAA
+        &_2
+            color: #FFFFFF
+            background-color: #A0C3BD
+        &_3
+            color: #000000
+            background-color: #FEFEB5
+    &-text
+        max-width: 540px
+        padding-left: 80px
+    // &-user-status-shown
+    //     display: block
+        
+
+.plan-user-status
+    display: none
+
+.loyalty-plan:not(.loyalty-plan-bordered) .plan-user-status-shown,
+.loyalty-plan.loyalty-plan-bordered .plan-user-status
+    display: block
+    position: absolute
+    top: 30px
+    right: 30px
+
+
+@media screen and (min-width:375px) and (max-width:767px)
+    .loyalty
+        &-wrapper
+            max-width: 1320px
+            width: 100%
+            display: flex
+            margin: 0 auto
+            flex-direction: column
+            padding: 20px
+        &-info-text
+            margin-top: 10px
+            margin-bottom: 20px
+        &-plans-wrapper
+            display: flex
+            flex-direction: column
+            gap: 50px
+        &-plan
+            display: flex
+            flex-direction: column
+            max-width: 1320px
+            width: 100%
+            display: flex
+            height: 100%
+            align-items: flex-start
+            position: relative
+            &:nth-child(5)
+                border: 1px solid #000000
+
+    .devider
+        display: none
+
+    .plan
+        &-name
+            position: relative
+            font-family: 'Inconsolata'
+            font-weight: 800
+            font-size: 20px
+            transform: rotate(0deg)
+            height: 30px
+            width: 130px
+            left: 0
+            top: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            &_1
+                color: #FFFFFF
+                background-color: #D4EAAA
+            &_2
+                color: #FFFFFF
+                background-color: #A0C3BD
+            &_3
+                color: #000000
+                background-color: #FEFEB5
+        &-text
+            max-width: 540px
+            padding-left: 0
+            padding: 20px
+        // &-user-status
+        //     position: absolute
+        //     top: 10px
+        //     right: 10px
+
+    .plan-user-status
+        display: none
+
+    .loyalty-plan:not(.loyalty-plan-bordered) .plan-user-status-shown,
+    .loyalty-plan.loyalty-plan-bordered .plan-user-status
+        display: block
+        position: absolute
+        top: 30px
+        right: 30px
+
+@media screen and (min-width:767px) and (max-width:1650px)
+    .loyalty-wrapper
+        max-width: 700px
+        width: 100%
+        display: flex
+        margin: 0 auto
+        flex-direction: column
+        padding: 20px
